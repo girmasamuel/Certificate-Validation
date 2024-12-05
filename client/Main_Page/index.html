@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="css/set-up.css" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Upload your certificate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5" style="background-color: r 0.5;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Upload Your  certificate</h2>
+                        <form id="upload-form">
+                            <div class="mb-3">
+                                
+                                    <label for="fname">student ID:</label>
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="fname">student Name:</label>
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="fname">Contact No:</label>
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="fname">Address Details:</label>
+                                    <input type="text" id="fname" name="fname"><br>
+                                  
+
+                                <label for="university">Choose a university:</label><br>
+
+                                <select name="university" id="university">
+                                  <option value="volvo">Addis Abeba University</option>
+                                  <option value="saab">Hawwassa University</option>
+                                  <option value="mercedes">Haramaya University</option>
+                                  <option value="audi">Mekele University</option>
+                                  <option value="audi">Adigrat University</option>
+                                  <option value="audi">ASTU University</option>
+                                  <option value="audi">AASTU University</option>
+                                  <option value="audi">Unity University</option>
+                                  <label for="fname">student ID:</label>
+                                 
+                             
+                                </select><br>
+                                <label for="file-input" class="form-label" >Choose a file</label>
+                                <input type="file" class="form-control" style="color:rgb(0, 0, 0);" id="file-input" required>
+                            </div>
+                            <div id="preview-container" class="mb-3 d-none">
+                                <h5>File Preview:</h5>
+                                <div id="preview-content" class="border rounded p-3"></div>
+                            </div>
+                            <form action="indexx.html">
+                                <button type="submit" class="btn btn-primary w-100" >Submit File</button>
+                                
+                              </form>
+                          
+                              
+                          
+                             
+                    </div>
+                </div>
+                <form action="indexx.html">
+                    <button type="submit" class="btn btn-primary w-100" >Download QR code</button>
+                    
+                  </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--
+    <div>
+        <div class="container text-center">
+            Hash value:<input type ="text" placeholder="Hash value">
+            <h2 >Generate QR Code For the Given Hash Value</h2>
+        </div>
+        <div style="padding: 10px;text-align:center">
+        <button class=" class_11"style="background-color:#589af1\"  >
+          <h5 style="color:rgb(0, 0, 0);">Generate QR Code</h5>
+        </button>
+      </div>
+    -->
+
+
+
+    <button id="theme-toggle" class="btn btn-floating">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
